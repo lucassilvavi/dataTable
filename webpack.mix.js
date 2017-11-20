@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+let bower_dir = "vendor/bower_components/";
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +12,14 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+// mix.js('resources/assets/js/app.js', 'public/js')
+//    .sass('resources/assets/sass/app.scss', 'public/css');
+mix.styles([
+    bower_dir + "bootstrap/dist/css/bootstrap.css",
+    bower_dir + "font-awesome/css/font-awesome.css",
+    bower_dir + "admin-lte/dist/css/AdminLTE.css",
+    bower_dir + "admin-lte/dist/css/skins/skin-blue.css",
+    bower_dir + "bootstrap-datepicker/dist/css/bootstrap-datepicker3.css",
+    bower_dir + "toastr/toastr.css",
+
+], "public/master/app.css");

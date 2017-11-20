@@ -1,0 +1,25 @@
+{
+  "name": "dataTable",
+  "description": "",
+  "main": "",
+  "authors": [
+    "lucas.vieira <lucas.vieira@terceirizado.mds.gov.br>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lucassilvavi/dataTable",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "datatables": "^1.10.16",
+    "datatables.net-plugins": "datatables-plugins#^1.10.16"
+  }
+}
